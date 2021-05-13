@@ -1,8 +1,21 @@
 .card
   .card-header
+    .fa.fa-book-open
     = course.title
   .card-body
+    .fa.fa-file-alt
     = course.description
+    .row
   .card-footer
-    = course.created_at
+    .far.fa-clock
+    = course.created_at.strftime('%d-%b-%Y')
+    .row
+    .fa.fa-chalkboard-teacher
     = course.user
+  .card-footer
+    = link_to 'Show all Details', course, class: 'btn btn-sm btn-primary'
+    = link_to 'Change this', edit_course_path(course), class: 'btn btn-sm btn-warning'
+    = link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'
+
+
+

@@ -1,10 +1,11 @@
-%p
-  %b Title:
-  = @course.title
-%p
-  %b Description:
-  = @course.description
+.container
+  %p
+    %b Title:
+    = @course.title
+  %p
+    %b Description:
+    = @course.description
 
-= link_to 'Change this', edit_course_path(@course)
-\|
-= link_to 'Back', courses_path
+  = link_to 'Change this', edit_course_path(@course)
+  \|
+  = link_to 'Back', courses_path

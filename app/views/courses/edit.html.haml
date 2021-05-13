@@ -1,7 +1,6 @@
-%h1 Editing course
+.container
+  = render 'form'
 
-= render 'form'
-
-= link_to 'Show', @course
-\|
-= link_to 'Back', courses_path
+  = link_to 'Show all details', @course, class: 'btn btn-sm bnt-success'
+  .row
+  = link_to 'Back', courses_path, class: 'btn btn-sm bnt-success'
