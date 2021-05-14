@@ -1,7 +1,7 @@
 .card
   .card-header
     .fa.fa-book-open
-    = course.title
+    = link_to course.title, course_path(course)
   .card-body
     .fa.fa-file-alt
     = course.description
@@ -9,8 +9,8 @@
   .card-footer
     .far.fa-clock
     = course.created_at.strftime('%d-%b-%Y')
-    .row
     .fa.fa-chalkboard-teacher
+    .row
     = course.user
   .card-footer
     = link_to 'Show all Details', course, class: 'btn btn-sm btn-primary'

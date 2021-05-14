@@ -1,10 +1,5 @@
-.container
-  %p
-    %b Title:
-    = @course.title
-  %p
-    %b Description:
-    = @course.description
+= render 'courses/course', course: @course
+
 
   = link_to 'Change this', edit_course_path(@course)
   \|
