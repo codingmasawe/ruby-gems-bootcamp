@@ -9,8 +9,8 @@
   .card-footer
     .far.fa-clock
     = course.created_at.strftime('%d-%b-%Y')
-    .fa.fa-chalkboard-teacher
     .row
+    .fa.fa-chalkboard-teacher
     = course.user
   .card-footer
     = link_to 'Show all Details', course, class: 'btn btn-sm btn-primary'
