@@ -5,8 +5,8 @@
   #navbarSupportedContent.collapse.navbar-collapse
     - if current_user
       %ul.navbar-nav.mr-auto
-        %li.nav-item{class: "#{'active font-weight-bold' if current_page?(root_path)}"}
-          = link_to root_path, class: 'nav-link' do
+        %li.nav-item{class: "#{'active font-weight-bold' if current_page?(home_index_path)}"}
+          = link_to home_index_path, class: 'nav-link' do
             .fa.fa-home
             Home
         %li.nav-item{class: "#{'active font-weight-bold' if current_page?(courses_path)}"}

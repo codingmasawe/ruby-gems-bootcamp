@@ -1,3 +1,33 @@
-%h1
-  Hello#world
-  %p Find me in app/views/home/index.html.erb
+.jumbotron
+  .display-5
+    %strong
+      What crazy stuff would you like to learn today?
+    .p-4
+    .form-inline.my-2.my-lg-0
+    = form_tag(courses_path, method: :get) do
+      .input-group
+        = text_field_tag :title, params[:title], autocomplete: 'off', placeholder: "Enter your search", class: 'form-control-sm'
+        %span.input-group-append
+          %button.btn.btn-primary.btn-sm{:type => "submit"}
+            %span.fa.fa-search{"aria-hidden" => "true"}
+%hr
+%h2
+  Popular courses
+.card-columns
+- @courses.each do |course|
+  = render 'courses/course', course: course
+
+%hr
+%h2
+  Most recent courses
+.card-columns
+- @courses.each do |course|
+  = render 'courses/course', course: course
+
+%hr
+%h2
+  Top rated courses
+.card-columns
+- @courses.each do |course|
+  = render 'courses/course', course: course
+
