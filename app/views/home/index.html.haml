@@ -19,9 +19,9 @@
 
 %hr
 %h2
-  Most recent courses
+  Latest courses
 .card-columns
-- @courses.each do |course|
+- @latest_courses.each do |course|
   = render 'courses/course', course: course
 
 %hr
