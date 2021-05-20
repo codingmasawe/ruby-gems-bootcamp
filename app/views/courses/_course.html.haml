@@ -14,8 +14,8 @@
     = course.user
   .card-footer
     = link_to 'Show all Details', course, class: 'btn btn-sm btn-primary'
-    = link_to 'Change this', edit_course_path(course), class: 'btn btn-sm btn-warning'
-    = link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'
+    = link_to 'Change details', edit_course_path(course), class: 'btn btn-sm btn-warning'
+    = link_to 'Delete course', course, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'
 
 
 
