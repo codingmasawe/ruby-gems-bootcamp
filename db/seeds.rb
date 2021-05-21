@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create!(email: 'wuennik@live.com', password: 'verySecret', password_confirmation: 'verySecret')
 
-30.times do
+40.times do
   Course.create([{
   title: Faker::Educator.course_name,
   description: Faker::ChuckNorris.fact,
