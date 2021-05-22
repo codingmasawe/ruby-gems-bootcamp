@@ -19,6 +19,7 @@ require("stylesheets/application.scss")
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
+import "bootstrap"
 
 require("trix")
 require("@rails/actiontext")

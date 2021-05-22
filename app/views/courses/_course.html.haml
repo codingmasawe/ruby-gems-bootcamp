@@ -11,7 +11,7 @@
     = course.created_at.strftime('%d-%b-%Y')
     .row
     .fa.fa-chalkboard-teacher
-    = course.user
+    = course.user_id
   .card-footer
     = link_to 'Show all Details', course, class: 'btn btn-sm btn-primary'
     = link_to 'Change details', edit_course_path(course), class: 'btn btn-sm btn-warning'
