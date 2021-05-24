@@ -8,9 +8,11 @@
 User.create!(email: 'wuennik@live.com', password: 'verySecret', password_confirmation: 'verySecret')
 
 30.times do
-  Course.create([{
-  title: Faker::Educator.course_name,
-  description: Faker::ChuckNorris.fact,
-  user_id: User.first.id
+  Course.create!([{
+    title: Faker::Educator.course_name,
+    description: Faker::TvShows::GameOfThrones.quote
   }])
 end
+
+
+puts 'seeeeeeeded'
